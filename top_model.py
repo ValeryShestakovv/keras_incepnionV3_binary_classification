@@ -8,12 +8,19 @@ import os
 import numpy as np
 import h5py
 
+#загружаем наши датасеты в виде нампи массивов
+#при загрузке изображений в генератор для аугментации мы не использовали shuffle -> они не перемешались -> у нас в
+# train_data загрузятся из 2 папок в img_train последовательно сначала 100 изображений 1 класса (т.е. птицы) и мы можем смело указать им 0 в качестве меток
+# и 100 изображений класса 2 (т.е. самолеты) и мы укажем им метку 1
 train_data = np.load(open('bottleneck_features/bn_features_train.npy', 'rb'))
 train_labels = np.array([0] * 1000 + [1] * 1000)
 
 validation_data = np.load(open('bottleneck_features/bn_features_validation.npy', 'rb'))
 validation_labels = np.array([0] * 1000 + [1] * 1000)
 
+#создаем верхний слой модели(?), в оригинальном пейпаере слои с 256 нейронами, но используем тут 2 слова по 64
+#для того чтобы мой суперкомпьютер не напрегался
+#и дропаут в 0.5 для борьбы с переобучением в условиях ограниченной выборки (но может уже и не такой ограниченной, аугментация топ)
 def fc_model():
     fc_model = Sequential()
     fc_model.add(Flatten(input_shape=train_data.shape[1:]))
