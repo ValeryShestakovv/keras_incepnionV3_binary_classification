@@ -26,4 +26,4 @@ https://www.kaggle.com/code/fanbyprinciple/cifar10-explanation-with-pytorch/inpu
 | Accuracy: 84.00% | Accuracy: 0.91   |       Accuracy: 0.96     |
 
 <img src="https://github.com/ValeryShestakovv/keras_incepnionV3_binary_classification/blob/main/image_result.jpg" width="300">
-![image_result](https://github.com/ValeryShestakovv/keras_incepnionV3_binary_classification/blob/main/image_result.jpg)
+
