@@ -25,5 +25,5 @@ https://www.kaggle.com/code/fanbyprinciple/cifar10-explanation-with-pytorch/inpu
 |    Loss: 0.39    |   Loss: 0.25     |         Loss: 0.15       |
 | Accuracy: 84.00% | Accuracy: 0.91   |       Accuracy: 0.96     |
 
-<img src="https://github.com/ValeryShestakovv/keras_incepnionV3_binary_classification/blob/main/image_result.jpg" width="300">
+<img src="https://github.com/ValeryShestakovv/keras_incepnionV3_binary_classification/blob/main/image_result.jpg" width="1000">
 
