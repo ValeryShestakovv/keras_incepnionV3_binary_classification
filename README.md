@@ -1,4 +1,4 @@
-# keras_incepnionV3_binary_classification
+# ШncepnionV3, аугментация и птички 🐦
 
 Алгоритм получается такой:
 1) Подготавливаем изображение 2 классов (самолетики, птички). 
@@ -11,11 +11,14 @@
 
 Датасет СИФАР-10 чтобы жестко скачать руками:
 https://www.kaggle.com/code/fanbyprinciple/cifar10-explanation-with-pytorch/input
+
 Последние актуальные веса для самолетиков и птичек:
 [https://dropmefiles.com/gX7Nk](https://drive.google.com/file/d/1rhc0H5IrAsCRhag6UQj5cLIMHvhaRYlX/view?usp=sharing)
+
 Заресайзеные пикчи:
 [https://dropmefiles.com/XiwEj
 ](https://drive.google.com/file/d/1jGEcZSnmTruygm20Yz9fIIGwdahSFHM3/view?usp=sharing)
+
 Итоговые результаты:
 | 200img/50epochs  | 2000img/50epochs | 2000img+augment/50epochs |
 | -----------------| -----------------| -------------------------|
